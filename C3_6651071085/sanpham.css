@@ -1,0 +1,117 @@
+* { box-sizing: border-box; }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+header {
+    background-color: #7fd6cf;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+}
+header img {
+    margin-right: 15px;
+    border-radius: 4px;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+h2 {
+    border-bottom: 2px solid #7fd6cf;
+    padding-bottom: 6px;
+}
+.product-info {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.product-info img {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #fafafa;
+}
+.product-details {
+    flex: 1;
+    min-width: 250px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+caption {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 6px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+}
+thead th {
+    background-color: #7fd6cf;
+    color: #000;
+}
+tbody th {
+    background-color: #f0f0f0;
+    width: 30%;
+}
+.similar-products {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.similar-products li {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: #fafafa;
+}
+.similar-products img {
+    max-width: 100%;
+    height: auto;
+}
+.similar-products p {
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+aside {
+    margin-top: 25px;
+    background-color: #eafaf8;
+    border: 1px solid #7fd6cf;
+    border-radius: 6px;
+    padding: 15px 20px;
+}
+aside ul {
+    margin: 0;
+    padding-left: 20px;
+}
+footer {
+    background-color: #14374d;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+footer p {
+    margin: 4px 0;
+}

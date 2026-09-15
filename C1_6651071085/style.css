@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f7fb; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;
+    flex: 1;
+}
+
+
+.profile-header {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+
+.banner {
+    background: linear-gradient(135deg, #1f7b88 0%, #3ca79c 30%, #f7a552 70%, #f6c043 100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 30px;
+    position: relative;
+    color: white;
+    min-height: 140px;
+}
+
+.banner-text h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.banner-text p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+.avatar {
+    position: absolute;
+    right: 40px;
+    bottom: -40px; 
+    width: 120px;
+    height: 120px;
+    background-color: #c9d8e5; 
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.tabs {
+    padding: 15px 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.tab {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px; 
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
+.tab-intro {
+    background-color: #def2f0;
+    color: #0b7f75;
+    border-bottom: 2px solid #0b7f75; /* Vạch gạch chân nhỏ */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Tab Kỹ năng */
+.tab-skills {
+    background-color: #fee9d3;
+    color: #d1752b;
+}
+
+/* Tab Liên hệ */
+.tab-contact {
+    background-color: #e3dff0;
+    color: #645391;
+}
+
+/* ------------------ PHẦN CONTENT (3 CỘT) ------------------ */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Chia 3 cột đều nhau */
+    gap: 30px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Khung trắng chung cho cột 1 và 3 */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Cột 1: Giới thiệu */
+.intro-card p {
+    margin-bottom: 15px;
+    color: #444;
+}
+.intro-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Cột 2: Kỹ năng */
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.skills-list li i {
+    color: #0c9b91; /* Màu xanh của dấu check */
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Cột 3: Liên hệ */
+.contact-card strong {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.contact-info i {
+    color: #0b7f75;
+    width: 20px;
+    margin-right: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ------------------ PHẦN FOOTER ------------------ */
+.footer {
+    background-color: #c0e0f3; /* Dải xanh dưới cùng */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #444;
+}
+
+.footer-logo {
+    margin-top: 5px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #2b7095;
+    font-weight: 600;
+}
+
+/* ------------------ RESPONSIVE (Dành cho điện thoại) ------------------ */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr; /* Gộp thành 1 cột trên ĐT */
+    }
+    .avatar {
+        width: 90px;
+        height: 90px;
+        right: 20px;
+        bottom: -30px;
+    }
+}

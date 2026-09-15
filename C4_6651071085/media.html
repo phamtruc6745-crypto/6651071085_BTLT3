@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MelodyVN Online</title>
+<link rel="stylesheet" href="media.css">
+</head>
+<body>
+
+<header>
+  <hgroup>
+    <h1>MelodyVN Online</h1>
+    <h2>Học nhạc mọi lúc mọi nơi</h2>
+  </hgroup>
+</header>
+
+<div class="container">
+  <main>
+    <section id="video-bai-hoc">
+      <h2>Bài học: Hợp âm cơ bản Guitar</h2>
+      <div class="video-wrapper">
+        <div class="video-wrapper">
+        <iframe 
+        src="https://www.youtube.com/embed/wjA-46rIbag?si=gYh72kun25hdIgif" 
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        loading="lazy" 
+        allowfullscreen>
+    </iframe>
+</div>
+      </div>
+      <p class="video-desc">Học cách bấm các hợp âm guitar phổ biến nhất trong bài học video này.</p>
+    </section>
+
+    <section id="nghe-thu">
+      <h2>Nghe thử giai điệu mẫu</h2>
+
+      <div class="audio-track">
+        <p>Canon in D – Piano</p>
+        <audio controls preload="none">
+          <source src="canon_piano.mp3" type="audio/mpeg">
+          <source src="canon_piano.ogg" type="audio/ogg">
+          <p>Trình duyệt không hỗ trợ audio.</p>
+        </audio>
+      </div>
+
+      <div class="audio-track">
+        <p>Fur Elise – Piano</p>
+        <!--
+          Thuộc tính autoplay: tự động phát ngay khi trang tải xong (không cần bấm nút play).
+          Thuộc tính loop: khi phát hết bài sẽ tự động quay lại từ đầu và phát lặp lại liên tục.
+          Lưu ý: nhiều trình duyệt hiện đại chặn autoplay có âm thanh nếu người dùng chưa
+          tương tác với trang, nên đoạn audio có thể cần người dùng bấm play thủ công lần đầu.
+        -->
+        <audio controls autoplay loop preload="none">
+          <source src="fur_elise.mp3" type="audio/mpeg">
+          <source src="fur_elise.ogg" type="audio/ogg">
+          <p>Trình duyệt không hỗ trợ audio.</p>
+        </audio>
+      </div>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Lịch học tuần này</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Ngày</th>
+          <th>Buổi học</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thứ Hai</td>
+          <td>Guitar Cơ bản</td>
+        </tr>
+        <tr>
+          <td>Thứ Tư</td>
+          <td>Piano Nhập môn</td>
+        </tr>
+        <tr>
+          <td>Thứ Sáu</td>
+          <td>Hợp âm nâng cao</td>
+        </tr>
+      </tbody>
+    </table>
+  </aside>
+</div>
+
+<footer>
+  Trung tâm âm nhạc MelodyVN - 123 Đường Nhạc, Quận Âm - Email: info@melodyvn.com - Hotline: 1900 6789
+</footer>
+
+</body>
+</html>

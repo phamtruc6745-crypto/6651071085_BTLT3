@@ -1,0 +1,127 @@
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+header {
+  background: #fff;
+  text-align: center;
+  padding: 24px 10px 16px;
+  border-bottom: 1px solid #ddd;
+}
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #1a1a1a;
+}
+header h2 {
+  margin: 4px 0 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #4a90d9;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main {
+  flex: 2;
+  min-width: 320px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+aside {
+  flex: 1;
+  min-width: 240px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+section { margin-bottom: 28px; }
+section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+video {
+  display: block;
+  background: #000;
+  border-radius: 4px;
+}
+
+/* Responsive video: giữ tỉ lệ khung hình 16:9, co giãn theo chiều rộng container,
+   tránh tràn ra ngoài khi thu nhỏ màn hình */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+.video-desc {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+}
+.audio-track {
+  margin-bottom: 14px;
+}
+.audio-track p {
+  margin: 0 0 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+audio {
+  width: 100%;
+  height: 32px;
+}
+aside h3 {
+  margin-top: 0;
+  font-size: 16px;
+  border-bottom: 2px solid #4a90d9;
+  padding-bottom: 6px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background: #eaf2fb;
+}
+tr:nth-child(2) td { background: #fdf3d9; }
+footer {
+  text-align: center;
+  background: #2b2b2b;
+  color: #ddd;
+  padding: 14px;
+  font-size: 13px;
+  margin-top: 20px;
+}
